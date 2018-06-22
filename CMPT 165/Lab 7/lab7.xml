@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="lab7.css" type="text/css"?>
+<info> 
+	<resource>Environment Canada Weather Forecast</resource> 
+	<location>Greater Vancouver</location> 
+	<timeIssued>Issued at: 11.00 AM PDT Thursday 30 June 2016</timeIssued>
+	<forecast>
+		<item><time>Today..</time><weather>Sunny. High 26 except 22 near the water. UV index 7 or high.</weather></item>
+		<item><time>Tonight..</time><weather>Clear. Windy near the water overnight. Low 12.</weather></item>
+		<item><time>Friday..</time><weather>Sunny. High 27 except 23 near the water.</weather></item>
+		<item><time>Saturday..</time><weather>Sunny. Low 16. High 27 except 23 near the water. </weather></item>
+		<item><time>Sunday..</time><weather>Sunny. Low 16. High 26 except 22 near the water.</weather></item>
+		<item><time>Monday..</time><weather>Sunny. Low 16. High 28 except 23 near the water.</weather></item>
+		<item><time>Normals for the period..</time><weather>Low 12. High 21.</weather>	</item>
+	</forecast>
+</info>

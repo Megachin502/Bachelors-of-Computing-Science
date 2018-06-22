@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transistional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Neonnatal Feeding Study</title>
+
+		<script type="text/javascript">
+
+function DateToday() {
+   var Today=new Date();
+   var ThisDay=Today.getDate();
+   var ThisMonth=Today.getMonth()+1;
+   var ThisYear=Today.getFullYear();
+   return ThisMonth+"/"+ThisDay+"/"+ThisYear;
+}
+
+function StartForm(){
+	document.REG.formdate.value=DateToday();
+	//moves cursor to name
+	document.REG.firstname.focus();
+}
+function CheckOther(){
+	if(document.REG.physician.selectedIndex==7){
+		//Promt for the name of the physician
+		document.REG.othername.value=prompt("Enter name of physician","Name");
+	}
+	document.REG.act.focus();
+}
+function APGAR(field){
+	if(field.value==0 || field.value==1 || field.value==2) {
+//eval changes string to number
+	var A = eval(document.REG.act.value);
+	var P = eval(document.REG.pulse.value);
+	var G = eval(document.REG.grimace.value);
+	var AP = eval(document.REG.app.value);
+	var R = eval(document.REG.resp.value);
+	document.REG.total.value=A+P+G+AP+R;
+	} else {
+		//alert the user
+		alert("You must enter a 0,1 or 2");
+		field.focus();
+	}
+}
+function Check_Data(){
+	if (document.REG.consent.checked==true){
+		alert("Form completed successfully");
+		return true;
+	} else {
+		alert("You still need parental consent");
+		return false;
+	
+	}
+}
+		</script>
+
+	</head>
+
+	<body style="background-color:#008080" text="white" onload="StartForm();">
+		<!-- return returns true or false and only submits when true-->
+		<form name="REG" action="" onsubmit="return Check_Data();">
+			<center>
+				<img src="Logo.gif" width="450" height="75" alt="St. Marys of Northland Pines" />
+
+				<table cellspacing="3" cellpadding="5">
+
+					<tr>
+						<td align="center" colspan="3">
+							<h1><font face="Arial,Helvetica">Neonatal Feeding Study</font></h1>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="3" align="right">
+      Date: <input name="formdate" size="10" maxlength="10" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      1) Name (first, last):
+						</td>
+						<td>
+							<input name="firstname" /></td><td><input name="lastname" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      2) Medical Record #:
+						</td>
+						<td>
+							<input name="medrecno" size="10" maxlength="10" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      3) Date of birth:
+						</td>
+						<td>
+							<input name="dob" value="mm/dd/yyyy" size="10" maxlength="10" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      4) Physician:
+						</td>
+						<td>
+							<!--onblur=runs whenever cursor leaves-->
+							<select name="physician" onblur="CheckOther();">
+								<option value="Albert">Dr. Warren Albert</option>
+								<option value="Alvarez">Dr. Maria Alvarez</option>
+								<option value="Brinkman">Dr. Karen Brinkm</option>
+								<option value="Kerry">Dr. Michael Kerry</option>
+								<option value="Nichols">Dr. Chad Nichols</option>
+								<option value="Paulson">Dr. Karen Paulson</option>
+								<option value="Webb">Dr. Tai Webb</option>
+								<option value="Other">Other</option>
+							</select>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      If other (specify): 
+						</td>
+						<td>
+							<input name="othername" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td rowspan="6" valign="top">
+      5) 1 Minute APGAR Score:
+						</td>
+						<td>
+      Activity
+						</td>
+						<td>
+							<input name="act" value="0" size="1" maxlength="1" onblur="APGAR(this);"/>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      Pulse
+						</td>
+						<td>
+							<input name="pulse" value="0" size="1" maxlength="1" onblur="APGAR(this);"/>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+      Grimace (Reflex, Irritability)
+						</td>
+						<td>
+							<input name="grimace" value="0" size="1" maxlength="1" onblur="APGAR(this);"/>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      Appearance (Skin Color)
+						</td>
+						<td>
+							<input name="app" value="0" size="1" maxlength="1" onblur="APGAR(this);"/>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      Respiration
+						</td>
+						<td>
+							<input name="resp" value="0" size="1" maxlength="1" onblur="APGAR();"/>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<b>TOTAL</b>
+						</td>
+						<td>
+							<input name="total" value="0" size="2" maxlength="2" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      6) Birth weight (gms):
+						</td>
+						<td>
+							<input name="bwgt" size="6" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+      7) Parental Consent (required):
+						</td>
+						<td>
+							<input type="checkbox" name="consent" />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td colspan="3" align="center">
+							<input type="submit" value="Register" />
+							<!-- onclick, reloads page-->
+							<input type="reset" value="Reload" onclick="location.reload();"/>
+						</td>
+					</tr>
+				</table>
+			</center>
+
+			<p>Please submit all questions regarding this form or the NICU feeding study 
+to Dr. Karen Paulson, Department of Pediatrics, ext. 5122.</p>
+
+		</form>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+		</p>
+	</body>
+</html>
+

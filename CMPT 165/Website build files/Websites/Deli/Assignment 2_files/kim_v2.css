@@ -1,0 +1,131 @@
+body { background-color:#FFFFFF; }
+
+#bodypage {background-color:#FFFFFF;}
+	
+#footer { color:#3C2415; 
+	font-size: .88em; 
+	text-align: center;
+	font-family:"Times New Roman", serif;
+	font-weight:none;
+	font-style:none;}
+	
+.pos {position:relative;}
+	
+.navbar { 
+	position:relative;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:auto; 
+	margin-right:auto;
+	padding:none;
+	width:980px;
+	min-height:8px;
+	height:auto;}
+	
+.navbar ul { list-style-type:none; 
+	overflow:hidden; 
+	position:relative; 
+	margin:none; 
+	padding:none;}
+	
+.navbar li {float:left;
+	margin-top:5px;
+	margin-bottom:25px;
+	border-right:1px solid #CECECE}
+
+ul a:link,a:visited {display:block; 
+	width:160px; 
+	font-family:"Comic Sans MS", sans-serif; 
+	font-weight:none; 
+	font-size:90%;
+	color:#FFFFFF; 
+	background-color:#110600; 
+	text-align:center; 
+	padding:15px 10px 10px 10px;
+	text-decoration:none; 
+	text-transform:uppercase;}
+	
+ul a:hover,a:active {color:#FFFFFF; 
+	background-color:rgba(17, 6, 0, 0.6);
+	font-weight:bold;}
+	
+.selected {display:block; 
+	width:160px; 
+	color:#FFFFFF; 
+	background-color:rgba(17, 6, 0, 0.75); 
+	font-weight:bold; 
+	font-family:"Comic Sans MS", sans-serif; 
+	font-style:none; 
+	font-size:90%;
+	text-align:center; 
+	padding:15px 10px 10px 10px;
+	text-decoration:none; 
+	text-transform:uppercase;} 
+
+.menu_tab {border:2px hidden #FFFFFF; 
+    background-color:rgba(31, 16, 16, 0.5);
+	position:relative;
+	margin-top:none;
+	margin-left:auto; 
+	margin-right:auto;
+	margin-bottom:25px;
+	padding-top:none;
+	padding-bottom:25px;
+	width:900px;
+	min-height:480px;
+	height:auto;}
+	
+.menu_th {font-family:"Brush Script Std", sans-serif;
+	font-size:225%;
+	font-weight:none;
+	width:900px;
+	margin-top:none;
+	margin-left:auto; 
+	margin-right:auto;
+	color:rgba(31, 16, 16, 0.75);
+	text-align:center;
+	padding:35px 0px 25px 0px;
+	border-top: 3px solid rgba(31, 16, 16, 0.3);
+	border-bottom: 3px solid rgba(31, 16, 16, 0.3);}
+	
+.menu_main {font-family:"Palermo", serif;
+	font-size:175%;
+	font-weight:none;
+	color:#FFFFFF;
+	text-align:center;
+	padding:50px 0px 25px 0px;}
+	
+.menu_price {font-family:Arial, sans-serif;
+	font-size:95%;
+	font-weight:none;
+	color:#FFC628;
+	padding-bottom:15px;}
+	
+.menu_food {font-family:"Comic Sans MS", sans-serif;
+	font-size:125%;
+	font-weight:none;
+	color:#1F1010;
+	text-align:center;
+	padding:15px 0px 5px 0px;}
+	
+.menu_ingred {font-family:"Times New Roman", serif;
+	font-size:85%;
+	font-weight:none;
+	color:#FFFFFF;
+	text-align:center;
+	padding:0px 0px 15px 0px;}
+	
+.menu_about {font-family:"Times New Roman", serif;
+	font-size:90%;
+	font-weight:none;
+	color:#FFFFFF;
+	padding:0px 25px 15px 0px;}
+	
+#col {color:#FFC628;
+	font-style:italic;}
+	
+#contact {font-family:"Times New Roman", serif;
+	font-size:100%;
+	font-weight:none;
+	color:#1F1010;}
+	

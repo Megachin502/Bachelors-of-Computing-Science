@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://cmpt165.csil.sfu.ca/~dteoh/assignment2/home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="stylesheet" href="./Assignment 2_files/kim_v1.css" type="text/css" title="Normal">
+	<link rel="alternate stylesheet" href="./Assignment 2_files/kim_v2.css" type="text/css" title="Simple" disabled="">
+	<script src="./Assignment 2_files/style-switch.js.download"></script>
+	<title>Assignment 2</title>
+
+<style>
+.container { margin-left: auto; margin-right: auto; width: auto; min-width: 1080px;}
+
+.one {border:2px solid #3C2415; 
+    background-color:#FFFFFF; 
+	position:relative;
+	margin-top:none;
+	margin-left:auto; 
+	margin-right:auto;
+	padding-top:none;
+	width:720px;
+	height:480px;}
+</style>
+<script type="text/javascript">try {
+window.AG_onLoad = function(func) { if (window.addEventListener) { window.addEventListener('DOMContentLoaded', func); } };
+window.AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+window.AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+window.AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }</script></head>
+
+<body class="container" id="bodypage">
+	<h1 class="pos" align="center"><img src="./Assignment 2_files/logov2.png" alt="Kim Deli &amp; Sandwich" width="500" height="159"></h1>
+	<!-- This logo was created on Adobe Illustrator by myself -->
+	
+	<div class="navbar">
+		<ul align="center">
+			<li class="selected">Home</li>
+			<li><a href="http://cmpt165.csil.sfu.ca/~dteoh/assignment2/menu.html">Menu</a></li>
+			<li><a href="http://cmpt165.csil.sfu.ca/~dteoh/assignment2/order.html">Order</a></li>
+			<li><a href="http://cmpt165.csil.sfu.ca/~dteoh/assignment2/location.html">Location</a></li>
+			<li><a href="http://cmpt165.csil.sfu.ca/~dteoh/assignment2/contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<div class="one" style="max-width:720px" align="center">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_5888.jpg" style="width: 100%; display: none;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_5892.jpg" style="width: 100%; display: none;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_5931.jpg" style="width: 100%; display: none;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_6018.jpg" style="width: 100%; display: none;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_6016.jpg" style="width: 100%; display: block;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_6024.jpg" style="width: 100%; display: none;">
+	  <img class="mySlides" src="./Assignment 2_files/IMG_6548.png" style="width: 100%; display: none;">
+	</div>	
+	<!-- These images were shot by myself -->
+
+	<script>
+	
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000); // Change image every 3 seconds
+	}
+	</script>
+	
+	<div id="footer">
+		<br>
+		<hr>
+		<p>Kim Deli &amp; Sandwich Co. ©2016</p>
+	</div>
+
+
+	<select id="stylesheet-switcher" style="position: absolute; top: 0.5em; right: 0.5em;"><option value="kim_v1.css">Normal</option><option value="kim_v2.css">Simple</option></select></body></html>

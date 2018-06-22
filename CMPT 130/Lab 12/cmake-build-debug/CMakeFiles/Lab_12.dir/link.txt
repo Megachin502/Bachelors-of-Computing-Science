@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Lab_12.dir/pointers.cpp.o  -o Lab_12 

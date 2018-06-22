@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+	<head>
+
+		<title>Revised Study</title>
+		<script type="text/javascript">
+
+
+
+function DateToday() {
+   var Today=new Date();
+   var ThisDay=Today.getDate();
+   var ThisMonth=Today.getMonth()+1;
+   var ThisYear=Today.getFullYear();
+   return ThisMonth+"/"+ThisDay+"/"+ThisYear;
+}
+
+function StartForm() {
+   document.reg.formdate.value=DateToday();
+   document.reg.firstname.focus();
+}
+
+function CheckOther(){
+   if(document.reg.physician.selectedIndex==7) {
+   document.reg.othername.value=prompt("Enter name of physician","Name");
+}
+   document.reg.act.focus();
+}
+
+function APGAR(field) {
+   var score = field.value;
+   if(score==0 || score==1 || score==2) {
+   var A = eval(document.reg.act.value);
+   var P = eval(document.reg.pulse.value);
+   var G = eval(document.reg.grimace.value);
+   var AP = eval(document.reg.app.value);
+   var R = eval(document.reg.resp.value);
+   document.reg.total.value = A + P + G + AP + R;
+		<!--Focus and name of element-->
+		if(field.name=="resp"){
+			document.reg.bwgt.focus();
+		}
+   } else {
+      alert("You must enter a 0, 1, or 2");
+      field.focus();
+   }
+}
+function CheckWgt(){
+	var wgt = document.reg.bwgt.value;
+	if (wgt<1200){
+		alert("Patients with birth weights less than 1200 grabs are inelgible for participation in this study.")
+	}
+}
+function CheckData(){
+   var parents_agree=document.reg.consent.checked;
+   var wgt = eval(document.reg.bwgt.value);
+   if(parents_agree && wgt >=1200) {
+      alert("Form submitted successfully");
+      return true;
+   } else {
+      alert("Patient either has no consent or is less than 1200 gms in weight");
+      return false;
+   }
+}
+
+
+		</script>
+	</head>
+
+	<body bgcolor=navy text=white onload="StartForm();">
+		<form name="reg" id="reg" action="" onsubmit="return CheckData();">
+			<center>
+				<img src="Logo.gif" width=450 height=75 alt="St. Marys of Northland Pines" />
+
+				<table cellspacing=3 cellpadding=5>
+
+					<tr>
+						<td align=center colspan=3>
+							<h1><font face="Arial,Helvetica">Neonatal Feeding Study</font></h1>
+						</td>
+					</tr>
+
+					<!--- Field showing the current date --->
+					<tr>
+						<td colspan=3 align=right>
+      Today is: <input name=formdate size=10 maxlength=10>
+							</td>
+						</tr>
+
+						<!--- Fields containing the first and last name of the patient --->
+						<tr>
+							<td>
+      1) Name (first, last):
+							</td>
+							<td colspan=2>
+								<input name=firstname>&nbsp;&nbsp;<input name=lastname>
+									</td>
+								</tr>
+
+								<!--- Medical record number field --->
+								<tr>
+									<td width=230>
+      2) Medical Record #:
+									</td>
+									<td>
+										<input name=medrecno size=10 maxlength=10>
+										</td>
+									</tr>
+
+									<!--- Date of birth field --->
+									<tr>
+										<td width=230>
+      3) Date of birth:
+										</td>
+										<td>
+											<input name=dob value="mm/dd/yyyy" size=10 maxlength=10>
+											</td>
+										</tr>
+
+										<!--- Selection list with physician names and a field for names not in list --->
+										<tr>
+											<td width=230>
+      4) Physician:
+											</td>
+											<td>
+												<select name=physician onBlur="CheckOther();">
+													<option value="Dr. Warren Albert">Dr. Warren Albert
+														<option value="Dr. Maria Alvarez">Dr. Maria Alvarez
+															<option value="Dr. Karen Brinkman">Dr. Karen Brinkman
+																<option value="Dr. Michael Kerry">Dr. Michael Kerry
+																	<option value="Dr. Chad Nichols">Dr. Chad Nichols
+																		<option value="Dr. Karen Paulson">Dr. Karen Paulson
+																			<option value="Dr. Tai Webb">Dr. Tai Webb
+																				<option value="Other">Other
+																				</select>
+																			</td>
+																		</tr>
+
+																		<!--- Physician names not in the list --->
+																		<tr>
+																			<td width=230>
+      &nbsp;&nbsp;&nbsp;&nbsp;If other (specify): 
+																			</td>
+																			<td>
+																				<input name=othername>
+																				</td>
+																			</tr>
+
+																			<!--- Activity component of the APGAR score --->
+																			<tr>
+																				<td rowspan=6 valign=top width=200>
+      5) 1 Minute APGAR Score:<br>&nbsp;&nbsp;&nbsp;&nbsp;Each score must be 0, 1, or 2
+																					</td>
+																					<td>
+      Activity
+																					</td>
+																					<td>
+																						<input name=act value=0 size=1 maxlength=1 onBlur="APGAR(this);">
+																						</td>
+																					</tr>
+
+																					<!--- Pulse component of the APGAR score --->
+																					<tr>
+																						<td>
+      Pulse
+																						</td>
+																						<td>
+																							<input name=pulse value=0 size=1 maxlength=1 onBlur="APGAR(this);">
+																							</td>
+																						</tr>
+
+																						<!--- Grimace component of the APGAR score --->
+																						<tr>
+																							<td>
+      Grimace (Reflex, Irritability)
+																							</td>
+																							<td>
+																								<input name=grimace value=0 size=1 maxlength=1 onBlur="APGAR(this);">
+																								</td>
+																							</tr>
+
+																							<!--- Appearance component of the APGAR score --->
+																							<tr>
+																								<td>
+      Appearance (Skin Color)
+																								</td>
+																								<td>
+																									<input name=app value=0 size=1 maxlength=1 onBlur="APGAR(this);">
+																									</td>
+																								</tr>
+
+																								<!--- Respiration component of the APGAR score --->
+																								<tr>
+																									<td>
+      Respiration
+																									</td>
+																									<td>
+																										<input name=resp value=0 size=1 maxlength=1 onBlur="APGAR(this);">
+																										</td>
+																									</tr>
+
+																									<!--- Total APGAR score --->
+																									<tr>
+																										<td>
+																											<b>TOTAL</b>
+																										</td>
+																										<td>
+																											<input name=total value=0 size=2 maxlength=2>
+																											</td>
+																										</tr>
+
+																										<!--- Birth weight field --->
+																										<tr>
+																											<td width=230>
+      6) Birth weight (gms):<br>&nbsp;&nbsp;&nbsp;&nbsp;Weights must be >= 1200 gms.
+																												</td>
+																												<td>
+																													<input name=bwgt size=6 onblur="CheckWgt();">
+																													</td>
+																												</tr>
+
+																												<!--- Parental consent check box --->
+																												<tr>
+																													<td width=230>
+      7) Parental Consent (required):
+																													</td>
+																													<td>
+																														<input type=checkbox name=consent>
+																														</td>
+																													</tr>
+
+																													<!--- Form registration and reset buttons --->
+																													<tr>
+																														<td colspan=3 align=center>
+																															<input type=submit value="Register">&nbsp;&nbsp;
+																																<input type=reset value="Reload Page" onclick="location.reload();">
+																																</td>
+																															</tr>
+																														</table>
+																													</center>
+
+																													<p>Please submit all questions regarding this form or the NICU feeding study 
+to <font color="#FFFF00">Dr. Karen Paulson, Department of Pediatrics, ext. 
+5122</font>.</p>
+																												</form>
+																											</body>
+																										</html>

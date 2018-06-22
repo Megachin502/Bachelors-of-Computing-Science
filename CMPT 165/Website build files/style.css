@@ -1,0 +1,53 @@
+#header{
+	background-color:#86b300;
+	color:white;
+	text-align:center;
+	border:1px solid white;
+}
+
+#container{
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:white;
+	border:7px solid black;
+	text-align:center;
+	padding:5px;
+}
+
+#content{
+
+}
+
+#nav{
+	border:1px solid white;
+}
+
+#main{
+	border:1px solid white;
+}
+
+body{
+	background-color:grey;
+}
+
+#footer{
+	text-align:center;
+	position:fixed;
+	width:55%;
+	padding:10px;
+}
+
+ul{
+	background-color: #ddd;
+	text-align:center;
+	border: 1px solid #555;
+}
+
+li{
+	display:inline;
+	text-align:center;
+	padding:75px;
+}
+
+

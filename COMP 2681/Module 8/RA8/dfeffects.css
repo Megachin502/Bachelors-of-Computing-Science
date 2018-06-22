@@ -1,0 +1,47 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Review Assignment
+
+   Special Effects style sheet
+   Author: Elvis Lam
+   Date:   May 2, 2018
+
+   Filename:         dfeffects.css
+   Supporting Files: paper.png
+
+*/
+
+#familyLinks{
+	/*4 Box-shadow, black opacity, inset, right and left positioning*/
+	box-shadow: inset rgba(0,0,0,.6) -10px 0px 15px;
+}
+
+#familyLinks img{
+	/*5 no inset*/
+	box-shadow: rgba(0,0,0,.6) 10px 10px 15px;
+}
+#familyLinks img:hover{
+	/*6 transform counter clockwise, opacity*/
+	transform: rotate(-5deg);
+	opacity:1.0;
+}
+article{
+	/*7 horinzontal gradient from x to y color, browser extensions*/
+	background: -o-linear-gradient(to right, rgb(151,151,151), rgb(231,231,231));
+	background: -ms-linear-gradient(to right, rgb(151,151,151), rgb(231,231,231));
+	background: -moz-linear-gradient(to right, rgb(151,151,151), rgb(231,231,231));
+	background: -webkit-linear-gradient(to right, rgb(151,151,151), rgb(231,231,231));
+	background: linear-gradient(to right, rgb(151,151,151), rgb(231,231,231));
+}
+h1{
+	/*8 text-shadows*/
+	text-shadow: black 1px 1px 0px;
+	text-shadow: rgba(30,57,0,.8) 5px 5px 10px;
+}
+article #family{
+	/*9 border-image and width*/
+	border-style:solid;
+	border-image: url("images/paper.png") 70 repeat;
+	border-width:10px;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Module 1"/>
+	<classpathentry kind="src" path="Module 2/Assignment 1/src"/>
+	<classpathentry kind="src" path="Module 3/Assignment 2/src"/>
+	<classpathentry kind="src" path="Module 4/Assignment 3/src"/>
+	<classpathentry kind="src" path="Module 5/Assignment 4/src"/>
+	<classpathentry excluding="Assignment 5/src/" kind="src" path="Module 7"/>
+	<classpathentry kind="src" path="Module 7/Assignment 5/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Module 2/Assignment 1/bin"/>
+</classpath>

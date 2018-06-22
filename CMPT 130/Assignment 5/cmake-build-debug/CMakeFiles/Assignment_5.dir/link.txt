@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++11 -g   CMakeFiles/Assignment_5.dir/test.cpp.o  -o Assignment_5 

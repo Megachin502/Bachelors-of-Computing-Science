@@ -1,0 +1,93 @@
+/*
+Provide a CSS switching widget on the page.
+
+Copyright 2016, Greg Baker. Licensed CC by-sa 4.0.
+*/
+
+/* Doing everything the hard way here to avoid a jQuery dependancy */
+
+var selector;
+
+/*
+ * Build stylesheet selector by inspecting <link> elements.
+ */
+build_selector = function() {
+  var link, rel, href, title, opt;
+  var links = document.getElementsByTagName('link');
+  var body = document.getElementsByTagName('body')[0];
+  
+  selector = document.createElement('select');
+  selector.style.position = 'absolute';
+  selector.style.top = '0.5em';
+  selector.style.right = '0.5em';
+  selector.setAttribute('id', 'stylesheet-switcher');
+  selector.addEventListener('change', select_change);
+
+  for ( i=0; i < links.length; i++ ) {
+    link = links[i];
+    rel = link.getAttribute('rel').toLowerCase();
+    if ( rel == 'stylesheet' || rel == 'alternate stylesheet' ) {
+      href = link.getAttribute('href');
+      title = link.getAttribute('title') || href;
+
+      opt = document.createElement('option');
+      opt.setAttribute('value', href);
+      opt.innerHTML = title;
+      
+      if ( rel == 'stylesheet' ) {
+        enable(link);
+        opt.selected = true;
+      } else if ( rel == 'alternate stylesheet' ) {
+        disable(link);
+      }
+
+      selector.appendChild(opt);
+    }
+  }
+  
+  body.appendChild(selector);
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  build_selector();
+});
+
+
+
+/*
+ * Handle changed stylesheet selector: turn on only the selected CSS.
+ */
+select_change = function() {
+  var sel = selector.selectedIndex;
+  var links = document.getElementsByTagName('link');
+  var link, i, rel;
+  
+  for ( i=0; i < links.length; i++ ) {
+    link = links[i];
+    rel = link.getAttribute('rel').toLowerCase();
+    if ( rel == 'stylesheet' || rel == 'alternate stylesheet' ) {
+      if ( i == sel ) {
+        enable(link);
+      } else {
+        disable(link);
+      }
+    }
+  }
+};
+
+
+/*
+ * enable stylesheet link
+ */
+enable = function(link) {
+  link.disabled = false;
+  link.setAttribute('rel', 'stylesheet');
+}
+/*
+ * disable stylesheet link
+ */
+disable = function(link) {
+  link.disabled = true;
+  link.setAttribute('rel', 'alternate stylesheet');
+}
+

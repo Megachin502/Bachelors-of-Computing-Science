@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Elvis Lam | COMP 2681 Final Project</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <style>
+            #textShadow{text-shadow: 3px 3px blue;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <p id="time">The time has not updated yet</p>
+            <img src="images/banner.jpg" style="width:100%;" alt="logo">    
+            <script src="js/main.js"></script>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="websitelinks.html" >Web Site Links</a></li>
+                <li><a href="otherrequirements.html" style="color:red;">Other Requirements</a></li>
+                <li><a href="crossreference.html">Cross Reference</a></li>
+                <li><a href="evaluationform.html">Evaluation Form</a></li>
+            </ul>
+        </nav>
+        <div>
+                <h1>Hot Spots/Image Maps</h1>
+                <img src="images/guy.jpg" alt="child" usemap="#map" id="hotspot"/>
+                <map name="map">
+                    <area shape="poly" coords="139,78,173,79,173,159,139,162" href="http://www.dictionary.com/browse/guy" alt="Guy"/>
+                </map>
+                <p>Click the guy in the middle</p>
+                <hr id="linebreak">
+                <table id="list">
+                    <tr>
+                        <th>
+                            <b>Unordered List</b>
+                            <ul>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </th>
+                        <th>
+                            <b>Ordered List</b>
+                            <ol>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ol>
+                        </th>
+                        <th>
+                            <b>Description List</b>
+                            <dl>
+                                <dt>Coffee</dt>
+                                <dd>- black hot drink</dd>
+                                <dt>Milk</dt>
+                                <dd>- white cold drink</dd>
+                            </dl>
+                        </th>
+                    </tr>
+                </table>
+                <hr>
+                <b>Special Characters</b>
+                <p id="specialChars">&copy;&euro;&forall;&isin;&sum;</p>
+                <hr>
+                <b>Drop Cap</b>
+                <p id="dropCap">Once upon a time...</p>
+                <hr>
+                <b id="webFont">Web Font</b>
+                <p style="font-family:Courier New, Courier, monospace;">This is a monospace font</p>
+                <hr>
+                <table>
+                    <tr>
+                        <th><b>Text Shadow</b>
+                            <p id="textShadow">Shadowy Mcgee</p></th>  
+                        <th><b>Box Shadow</b>
+                            <p id="boxShadow" style="box-shadow: 3px 3px blue;border:1px solid;">Hey, how is it going?</p></th>
+                    </tr>
+                </table>
+                <hr>
+                <table id="transforms">
+
+                    <tr>
+                        <th><b>Skew</b>
+                            <br>
+                            <img src="images/tusk.png" id="transform" style="transform: skewY(30deg);width:30%;" alt="skew image"></th>  
+                        <th><b>Rotate</b>
+                            <img src="images/tusk.png" id="rotate" style="transform: rotate(160deg);width:30%;" alt="rotate image"></th>
+                    </tr>
+                </table>
+                <br><br>
+                <hr>
+                <h1 id="opac">Opacity</h1>
+
+                <img class="2img" src="images/me.jpg" style="opacity:.5;z-index: 1;position: absolute;width:20%;" alt="1">
+                <img class="2img" src="images/me2.jpg" style="opacity:.5;position: absolute;z-index: 2;width:10%;" alt="2"><br><br><br><br><br><br><br><br><br><br><br>
+                <hr>
+                <h1 id="multimedia">Multimedia</h1>
+                <audio controls>
+                    <source src="media/music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio><br>
+                <video width="400" controls>
+                    <source src="media/video.webm" type="video/webm">
+                    Your browser does not support HTML5 video.
+                </video><br>
+                <object width="200" height="200" data="media/frog.swf">
+                </object>
+            </div><br>
+        <footer>
+            <em>Updated May 2018</em>
+        </footer>
+    </body>
+    
+</html>

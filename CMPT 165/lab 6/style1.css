@@ -1,0 +1,10 @@
+body>section{
+	margin: 1em 0;
+	padding: 0.5em;
+	border: thin #ccc solid;
+}
+h2{
+	float:right;
+	width:95px;
+	text-align:right;
+}

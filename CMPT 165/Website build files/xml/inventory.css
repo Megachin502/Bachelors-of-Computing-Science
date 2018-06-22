@@ -1,0 +1,55 @@
+title{
+	display: block;
+	margin-bottom:15px;
+	font-size:30px;
+	text-decoration: underline;
+	max-width:870px;
+	min-width:870px;
+	margin-right: 400px;
+	margin-left: 400px;
+}
+item{
+	margin-bottom:15px;
+	display:block;
+	border:3px black solid;
+	max-width:870px;
+	min-width:870px;
+	margin-right: 400px;
+	margin-left: 400px;
+	background-color: #ffff99;
+}
+name {
+	color:blue;
+	font-style:italic;
+	text-decoration: underline;
+	font-size:30px;
+}
+price,productDescription,numberInInventory{
+	display:list-item;
+	list-style-type:none;
+}
+info{
+	text-align:center;
+}
+price:before{
+	content: "Price: ";
+	font-weight: bold;
+	font-size:20px;
+	color:black;
+}
+productDescription:before{
+	content: "Product Description: ";
+	font-weight: bold;
+	font-size:20px;
+}
+numberInInventory:before{
+	content: "Number in inventory: ";
+	font-weight: bold;
+	font-size:20px;
+}
+price{
+	color:  #cc3300;
+}
+numberInInventory{
+	color:purple;
+}

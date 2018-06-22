@@ -1,0 +1,264 @@
+body {
+     background-color:#f9d7d8;
+      margin: 0;
+}
+img {
+    width:100%;
+    height:400px;
+    display: block;
+    margin: auto;
+}
+#bg  {
+    background-image:url(http://cmpt165.csil.sfu.ca/~xwa138/assignment2/picture/bg.jpg);
+    background-size: 100% 600px;
+    background-position:center; 
+    opacity:0.6;
+    margin-top:50px;
+    margin-left:30px;
+    margin-right:30px;
+}
+#menu ul{
+     list-style:none;
+}
+#menu li{
+      float:left;
+      width:210px;
+      height:80px;
+      background:#b7858c;
+      margin-left:75px;
+      margin-top:40px;
+      line-height:80px;
+      font-size:30px;
+      font-family: cursive,serif;
+      font-weight:bold;
+}
+#menu a{
+      display:block;
+      text-align:center;
+      height:75px;
+}
+#menu a:link{
+      background:#f9d7d8;
+      text-decoration:none;
+      color:#b7858c;
+}
+#menu a:visited{
+      color:#b7858c;
+      text-decoration:none;
+}
+#menu a:hover{
+      color:#f9d7d8;
+      font-weight:bold;
+      text-decoration:none;
+      background:#b7858c;
+      font-size:45px;
+}
+#header img{
+    width:500px;
+    height:80px;
+    display: block;
+    margin: auto;
+}
+#header  {
+    background-color:#b7858c;
+    margin-left: 20px;
+    margin-right: 20px;    
+    margin-bottom:30px;
+    margin-top: 10px;
+}
+p {
+  color:#b7858c;
+  font-size: 18px;
+  font-family: Geneva,Sans-serif;
+  text-align:left;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:20px;
+  margin-bottom:20px;
+}  
+p.information { 
+    text-align:center;
+    color:#fffffc;
+}
+p.detail  {
+    font-size:15px;
+    line-height:10px;
+    font-family:"Zapf Chancery",cursive;   
+}
+#story p{
+   font-size: 28px;
+   font-family:"Zapf Chancery",cursive;
+   margin-left:60px;
+   margin-right:30px;
+   line-height:60px;
+   color:#fffffc;
+}
+p.name  {
+    color:#fffffc;
+    font-size:35px;
+    font-family:Georgia,serif;
+    margin-top:40px;
+    font-weight:bold;
+}
+p.price  {
+    font-size:25px;
+    font-family:"Comic Sans", Cursive;
+    text-indent:20px;
+}
+span.source {
+    color:#dddddd;
+    font-style:italic;
+    font-size:9px;
+    text-align:left;
+}
+
+p.h2,h2 { 
+    color:#fffff5;
+    font-size: 30px;
+    font-family: serif;
+    text-align:center;
+    font-weight:bold;
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #b7858c;
+}
+#nav li { 
+    background-color:#b7858c;
+    height:108px;
+    width:220px;
+    float:left;
+    font-weight:bold;
+    font-size:25px;
+    margin-left:40px;
+    margin-right:30px;
+    font-family: cursive,serif;
+}
+#nav a{
+      display:block;
+      color:#f9d7d8;
+      text-align:center;
+      line-height:108px;
+}
+#nav a:link{
+      color:#fff0f5;
+      text-decoration:none;
+}
+#nav a:visited{
+      color:#fff0f5;
+      text-decoration:none;
+}
+#nav a:hover{
+      color:#b7858c;
+      font-weight:bold;
+      text-decoration:none;
+      background:#f9d7d8;
+      font-size:34px;
+}     
+#section  {
+    height:540px;
+    line-height:30px;   
+	border: dotted;
+	border-color:#b7858c;
+    overflow:scroll;
+    margin-right:40px;
+}
+#section1 {
+    height:540px;
+    line-height:30px;   
+	border: dotted;
+	border-color:#b7858c;
+    overflow:scroll;
+    margin-right:40px;
+    background-image:url(http://cmpt165.csil.sfu.ca/~xwa138/assignment2/picture/story.jpg);
+    background-repeat:no-repeat;
+    background-size:98% 97%;
+    background-position:center;
+    opacity:0.7;
+}    
+#l_product {
+    height: 380px;
+    width: 340px;
+    border-radius: 20px;
+    margin: 30px;
+    margin-bottom: 0px;
+    float: left;
+    overflow: hidden;
+    float: left;
+}
+#l_product img{
+    width:340px;
+    height:380px;
+}
+#product {
+    width:340px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;  
+    float:left;
+    clear: left;
+    height: 80px;
+}
+#product ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height:80px;
+}
+#product li{
+   display: inline;
+}
+#product img {
+    display:inline;
+    border-radius:10px;
+    width: 100px;
+    height: 80px;
+    opacity:0.9;
+    margin-left: 5px;
+    margin-right:5px;
+}
+#product img:hover{
+   opacity:0.6;
+}  
+hr {
+    border-top: 3px double #b7858c;
+    text-align: center;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    margin-right:30px;
+    margin-top:50px;
+    margin-left: 30px;
+}
+hr:after {
+    content: '\002665';
+    position: relative;
+    top: -15px;
+    padding: 0 10px;
+    background: #f9d7d8;
+    color: #b7858c;
+    font-size: 18px;
+}
+h1 {
+   color:#b7858c;
+   font-family: Klingon,fantasy;
+   text-align:center;
+   font-size: 40px;
+   margin-top:40px;
+   margin-bottom:0px;
+}
+#footer {
+    background-color:#b7858c;
+    color:#fff0f5;
+    text-align:center;
+    padding:3px; 
+    margin-left:20px;
+    margin-right:20px;
+    bottom:10px;
+    position: absolute;
+    width:96%;
+}

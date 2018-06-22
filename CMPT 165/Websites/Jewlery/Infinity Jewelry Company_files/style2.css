@@ -1,0 +1,304 @@
+body {
+     background:linear-gradient(#400000 , black 70%);
+     background-repeat:no-repeat;
+     margin: 0;
+    height: 100%;
+}
+#bg  {
+    opacity:0.9;
+    margin-left:25px;
+    margin-right:25px;
+}
+#bg img{
+   width: 100%;
+   height: 250px;
+}
+#header  {
+   background:rgba(0,0,0,0.5);
+   border-bottom:1px solid #696969;
+   margin-bottom:0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#header img{
+    width:300px;
+    height:100px;
+    display: block;
+    margin: auto;
+}
+#story {
+   background-image:url(http://cmpt165.csil.sfu.ca/~xwa138/assignment2/picture/story.jpg);
+   background-repeat:no-repeat;
+   background-size: 100% 100%;
+   width:70%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   border: 2px ridge #696969;
+   opacity: 0.8;
+}
+#transbox {
+    margin: 50px;
+    background-color: #150000;
+    opacity: 0.6;
+    display: inline-block;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#transbox  p{
+   font-size: 23px;
+   font-family:fantasy;
+   margin-left:40px;
+   margin-right:40px;
+   line-height:40px;
+   color:white;
+}
+
+span.source {
+    color:#656565;
+    font-style:italic;
+    font-size:10px;
+    line-height:20px;
+}
+h1 {
+   display:none;
+}
+h2{ 
+    color:#cc9999;
+    font-size: 23px;
+    font-family: serif;
+    text-align:center;
+}
+#menu ul{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+#menu li{
+      float: left;
+      width:400px;
+      height:220px;      
+      list-style-type: none;
+      margin-left:150px;
+      font-size:60px;
+      font-family:Verdana,Arial,Helvetica,sans-serif;
+      font-weight:bold;
+      line-height:200px;
+       margin-bottom: 30px;
+}
+#menu a{
+      display: block;
+      text-align:center;
+      text-decoration: none;
+}
+#menu a:link{
+      color:black;
+      background-image:url(http://cmpt165.csil.sfu.ca/~xwa138/assignment2/picture/bgi.jpg);
+      background-position:center;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+      clear: both;
+      opacity:0.3;
+}
+#menu a:visited{
+      color:black;
+      text-decoration:none;
+}
+#menu a:hover{
+      font-weight:bold;
+      text-decoration:none;
+      opacity:0.7;
+      font-size:45px;
+      color:#fffff0;
+}
+#nav ul{
+     list-style:none;
+     margin:0;
+     margin-left: -30px;
+     margin-right: 10px;
+     padding-bottom: 30px;
+     height:30px;
+}
+#nav li{
+      float:left;
+      width:20%;
+      height:30px;
+      line-height:30px;
+      font-size:18px;
+      font-family:"Zapf Chancery",cursive;
+      background:rgba(0,0,0,0.5);
+      background-clip:border-box;
+      border-bottom:1px solid #696969;
+      margin-bottom: 10px;
+}
+#nav a{
+      display:block;
+      text-align:center;
+      height:30px;
+      cursor: auto;
+}
+#nav a:link{
+      color:#d3d3d3;
+      text-decoration:none;
+}
+#nav a:visited{
+      color:#d3d3d3;
+      text-decoration:none;
+}
+#nav a:hover{
+      color:#d3d3d3;
+      font-weight:bold;
+      text-decoration:none;
+      background:#301010;
+      background-clip:border-box;
+      font-size:18px;
+      text-shadow: 1px 1px black;
+}      
+#section {
+    height: 500px;
+    position: relative;
+    cursor: default;  
+    margin: 40px;
+}
+#l_product {
+   display:none;
+}
+#section ul{
+    padding: 0;
+    margin: 0;
+}
+#section li{
+    width: 30%;
+    float: left;
+    margin-left:30px;
+}
+#section img{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    opacity: 0.8;
+    filter: grayscale(40%);
+    cursor: default;
+    position: relative;
+}
+#mask  {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.mask_list  {
+    width: 30%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left: 30px;
+    opacity: 0;
+    background-color: rgba(40,0,0, 0.7);
+    transition: all 0.4s ease-in-out;
+    border-radius: 20px;
+}
+.mask_list:hover { 
+	opacity: 1;
+}
+#section p.name{
+    color:#c0c6c9;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    font-family: Georgia, serif;
+    margin-top: 150px;
+    margin-bottom:30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
+}
+#section p.h2{
+    color:#e4d6d6;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease-in-out;
+}
+#section p.price{
+    font-size: 35px;
+    font-family: Lucida Bright,serif;
+    font-style: italic;
+    color: #949495;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+#section p{
+    font-size: 17px;
+    font-family: Georgia, serif;
+    color: #949495;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+#section p.detail{
+    font-size: 13px;
+    font-family: fantasy;
+    font-style: italic;
+    color: #adadad;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+.visible {
+    border-top: 1px solid  #696969;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:10px;
+}
+hr {
+   display:none;
+}
+#about {
+    column-count: 2;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 20px;
+}
+#about h2{
+   color: #b3ada0;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+p.information { 
+    text-align:left;
+    color: #656565;
+    margin:3px;
+    margin-left:0px;
+    font-size: 11px;
+}
+#about p{
+   margin-left:0px;
+   margin-right:0px;
+}
+#footer {
+    background-color:rgba(40,0,0,0.5);    
+    color:#c0c0c0;
+    border-top:1px solid #696969;
+    text-align:center;
+    font-size: 10px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

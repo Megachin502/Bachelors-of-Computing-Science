@@ -1,0 +1,14 @@
+resource,location,timeIssued {
+	display: block;
+	margin-bottom:25px;
+}
+
+time {
+	color:blue;
+	font-style:italic
+}
+item{
+	display:list-item;
+}
+weather{
+}

@@ -1,0 +1,113 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Review Assignment
+
+   Pizza Order Style Sheet
+   Author: Elvis Lam
+   Date:   April 25, 2018
+
+   Filename:         pizza.css
+   Supporting Files: delivery.png, okay.png, warning.png
+
+*/
+
+fieldset{
+	background-color: rgb(255,246,205);
+	border: 1px rgb(239,69,0) solid;
+	float: left;
+	margin:1%;
+}
+
+#custInfo{
+	width:35%;
+}
+#buildPizza{
+	width:60%;
+}
+#meat,#vegetables{
+	width:47%;
+	background-color:rgb(237,178,74);
+}
+legend{
+	font-size:.9em;
+}
+label{
+	display:block;
+	clear:left;
+	float:left;
+	width:40%;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:5px;
+}
+input,textarea{
+	display:blocks;
+	float:left;
+	width:50%;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+textarea{
+	height:100px;
+}
+form img{
+	display:block;
+	float:left;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#delTime{
+	width:150px;
+}
+#sizeimage{
+	margin-left:40%;
+}
+#size{
+	width:200px;
+	background-color:transparent;
+}
+#crust{
+	float:left;
+	font-size:.8em;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:150px;
+}
+#quantity{
+	width:40px;
+}
+.optionGroup{
+	width:100%;
+	border-style:none;
+	background-color:transparent;
+}
+#radio{
+	width:30px;
+	
+}
+#checkBox{
+	width:20px;
+}
+#submit{
+	width:150px;
+	float:none;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:50%;
+	margin-right:50%;
+}
+/*35 Focus valid*/
+input:focus:valid,select:focus:valid,textarea:focus:valid{
+	background-color:rgb(220,255,220);
+	background-image: url(images/okay.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+/*36 Focus invalid*/
+input:focus:invalid{
+	background-color:rgb(255,232,233);
+	background-image: url(images/warning.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}

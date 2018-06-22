@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="inventory.css" type="text/css"?>
+<info> 
+	<title>Inventory</title> 
+	<products>
+		<item>
+			<name>Monster Energy Drink</name>
+			<price>$5</price>
+			<productDescription>Extremely caffeinated drink 100ml</productDescription>
+			<numberInInventory>9</numberInInventory>
+		</item>
+		<item>
+			<name>Lays potatoe chips</name>
+			<price>$3</price>
+			<productDescription>Salted lays chips 100g</productDescription>
+			<numberInInventory>8</numberInInventory>
+		</item>
+		<item>
+			<name>Sour patch kids candy</name>
+			<price>$3</price>
+			<productDescription>Sour candy 50g</productDescription>
+			<numberInInventory>7</numberInInventory>
+		</item>
+		<item>
+			<name>Coca cola</name>
+			<price>$2</price>
+			<productDescription>carbonated drink 100ml</productDescription>
+			<numberInInventory>6</numberInInventory>
+		</item>
+		<item>
+			<name>Lotto 649</name>
+			<price>$5</price>
+			<productDescription>Vancouver lottery ticket 4 lines</productDescription>
+			<numberInInventory>Infinite</numberInInventory>
+		</item>
+	</products>
+</info>

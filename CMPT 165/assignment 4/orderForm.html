@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="background-color:#555;">
+	<head>
+		<title>Order Form</title>
+		<meta charset="UTF-8" />
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="java.js"></script>
+	</head>
+	<body style="text-align:center; border:3px black solid;margin-right: 400px;
+	margin-left: 400px;
+	max-width:870px;
+	min-width:870px;
+	border-radius:10px;background-color:white">
+	<a href="index.html">>>Click here to go back to home page<<</a>
+	<br>
+	<img src="pictures\logo2.png" alt="Elvis' USB Store">
+	<p>First name:<input type="text" id="firstName"/> Last name:<input type="text" id="lastName"/> Email:<input type="text" id="email"/></p>
+	<p>Street address:<input type="text" id="streetAddress"/> City:<input type="text" id="city"/> Province:<input type="text" id="province" maxlength="2" size="2"/> Postal code:<input type="text" id="postalCode" maxlength="6" size="6"/></p>
+	<p>Credit card type: <select id="creditCardType"><option value="visa">Visa</option><option value="amex">Amex</option><option value="mastercard">Mastercard</option></select> Credit card number:<input type="text" id="creditCardNumber" maxlength="4" size="4"/>-<input type="text" id="creditCardNumber" maxlength="4" size="4"/>-<input type="text" id="creditCardNumber" maxlength="4" size="4"/>-<input type="text" id="creditCardNumberLast" maxlength="4" size="4"/> Expiration date:<input type="text" id="expirateDateMonth" maxlength="2" size="2"/> / <input type="text" id="expirateDateYear" maxlength="2" size="2"/></p>
+	<br>
+	<p>&#8226;4gb ($5 per usb):<input type="text" id="product1" maxlength="3" size="3" value="0"/></p>
+	<p>&#8226;8gb ($10 per usb):<input type="text" id="product2" maxlength="3" size="3" value="0"/></p>
+	<p>&#8226;16gb ($15 per usb):<input type="text" id="product3" maxlength="3" size="3" value="0"/></p>
+	<p>&#8226;32gb ($20 per usb):<input type="text" id="product4" maxlength="3" size="3" value="0"/></p>
+	<p>&#8226;64gb ($25 per usb):<input type="text" id="product5" maxlength="3" size="3" value="0"/></p>
+	<br>
+	<p>Gift-wrapped ($1 per item):<input type="checkbox" id="giftWrapped"/></p>
+	<p>Email notifications for shippment:<input type="checkbox" id="emailNotifications"/></p>
+	<button id="submit">Submit</button>
+	<div id="receipt"></div>
+	</body>
+</html>

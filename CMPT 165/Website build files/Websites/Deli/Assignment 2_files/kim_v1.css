@@ -1,0 +1,141 @@
+body { background-color:#FFFFFF; }
+
+#bodypage {background-image:url(IMG_8945.jpg);
+    background-position:center;
+	background-position:top;
+	background-attachment:fixed;
+	background-repeat:repeat-y;
+    background-size:100%;}
+	
+#footer { color:#3C2415; 
+	font-size: .88em; 
+	text-align: center;
+	font-family:"Times New Roman", serif;
+	font-weight:none;
+	font-style:none;}
+	
+.pos {position:relative;}
+	
+.navbar {border:1px hidden #FFFFFF;  
+	position:relative;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:auto; 
+	margin-right:auto;
+	padding:none;
+	width:980px;
+	min-height:8px;
+	height:auto;}
+	
+.navbar ul { list-style-type:none; 
+	overflow:hidden; 
+	position:relative; 
+	margin:none; 
+	padding:none;}
+	
+.navbar li {float:left;
+	margin-top:5px;
+	margin-bottom:25px;}
+
+ul a:link,a:visited
+	{display:block; 
+	width:160px; 
+	font-family:"Lithos Pro", sans-serif; 
+	font-weight:none; 
+	font-size:90%;
+	color:#7D1935; 
+	background-color:#F5F3EE; 
+	text-align:center; 
+	padding:15px 10px 10px 10px;
+	text-decoration:none; 
+	text-transform:uppercase;}
+	
+ul a:hover,a:active
+	{ color:#7D1935; 
+	background-color:#F5F3EE;
+	font-weight:bold;}
+
+.selected {color:#FFC628; 
+	background-color:#1F1010; 
+	display:block; 
+	width:160px; 
+	font-family:"Lithos Pro", sans-serif; 
+	font-weight:bold; 
+	font-size:90%; 
+	text-align:center; 
+	padding:15px 10px 10px 10px;
+	text-decoration:none; 
+	text-transform:uppercase;} 
+
+.menu_tab {background-image:url(logo_transparent.png);
+    background-position:center;
+	background-attachment:none;
+	background-repeat:no-repeat;
+    background-size:30%;
+	border:2px hidden #FFFFFF; 
+    background-color:rgba(255, 255, 255, 0.6);
+	position:relative;
+	margin-top:none;
+	margin-left:auto; 
+	margin-right:auto;
+	margin-bottom:25px;
+	padding-top:none;
+	padding-bottom:25px;
+	width:900px;
+	min-height:480px;
+	height:auto;}
+	
+.menu_th {font-family:"Lithos Pro", sans-serif;
+	font-size:200%;
+	font-weight:none;
+	width:900px;
+	margin-top:none;
+	margin-left:auto; 
+	margin-right:auto;
+	color:rgba(31, 16, 16, 0.75);
+	text-align:center;
+	padding:35px 0px 25px 0px;
+	border-top: 3px solid rgba(31, 16, 16, 0.3);
+	border-bottom: 3px solid rgba(31, 16, 16, 0.3);}
+	
+.menu_main {font-family:"Brush Script Std", serif;
+	font-size:175%;
+	font-weight:none;
+	color:#1F1010;
+	text-align:center;
+	padding:50px 0px 25px 0px;}
+	
+.menu_price {font-family:Arial, sans-serif;
+	font-size:95%;
+	font-weight:none;
+	color:#9E1925;
+	padding-bottom:15px;}
+	
+.menu_food {font-family:"Lithos Pro", sans-serif;
+	font-size:125%;
+	font-weight:none;
+	color:#1F1010;
+	text-align:center;
+	padding:15px 0px 5px 0px;}
+	
+.menu_ingred {font-family:Arial, sans-serif;
+	font-size:85%;
+	font-weight:none;
+	color:#1F1010;
+	text-align:center;
+	padding:0px 0px 15px 0px;}
+	
+.menu_about {font-family:Arial, sans-serif;
+	font-size:90%;
+	font-weight:none;
+	color:#1F1010;
+	padding:0px 25px 15px 0px;}
+	
+#col {color:#9E1925;
+	font-style:italic;}
+	
+#contact {font-family:Arial, sans-serif;
+	font-size:100%;
+	font-weight:none;
+	color:#1F1010;}
+	

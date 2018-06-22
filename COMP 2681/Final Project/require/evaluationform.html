@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Elvis Lam | COMP 2681 Final Project</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <p id="time">The time has not updated yet</p>
+            <img src="images/banner.jpg" style="width:100%;" alt="logo">    
+            <script src="js/main.js"></script>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="websitelinks.html">Web Site Links</a></li>
+                <li><a href="otherrequirements.html">Other Requirements</a></li>
+                <li><a href="crossreference.html">Cross Reference</a></li>
+                <li><a href="" style="color:red;">Evaluation Form</a></li>
+            </ul>
+        </nav>
+        <div>
+                <form name="REG" onsubmit="alert('Submitted')">
+                    <table>
+                        <tr>
+                            <th><p>First Name (required):</p></th>
+                            <th><input name="firstName" required></th>
+                        </tr>
+                        <tr>
+                            <th><p>Last Name:</p></th>
+                            <th><input name="lastName"></th>
+                        </tr>
+                        <tr>
+                            <th><p>Do you like the site?</p></th>
+                            <th>yes<input type="radio" name="like" value="yes">no<input type="radio" name="like" value="no" checked="checked"></th>
+                        </tr>
+                        <tr>
+                            <th>How much do you like the site?</th>
+                            <th>(its okay) <input type="range" min="1" max="101" value="1" step="50"> (A lot)</th>
+                        </tr>
+                        <tr>
+                            <th><p>Which site you like better?</p></th>
+                            <th><select name="siteLike" onblur="CheckOther();">
+                                <option value="langley">langley shoe renew</option>
+                                <option value="this">this site</option>
+                                </select></th>
+                        </tr>
+                        <tr>
+                            <th><p>Comments:</p></th>
+                            <th><textarea id="comment" name="comment" cols="50" rows="6"></textarea></th>
+                        </tr>
+                    </table><br>
+                    <input id="submit" type="submit" value="Submit" />
+                </form>
+                <br>
+           </div>
+        <footer>
+            <em>Updated May 2018</em>
+        </footer>
+    </body>
+    
+</html>
